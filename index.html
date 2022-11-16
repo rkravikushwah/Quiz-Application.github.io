@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="row">
+    <div class="col-6 logo"><img src="css/softsynth_image6.png" alt=""></div>
+    <div class="col-6">
+    <div class="login" class="bg-warning">
+        <h1 class="text-center ">Login Here</h1>
+        <hr class="w-100 mx-auto">
+
+        <form action="info.html" class="need-validation" name="f1" onsubmit="submitform(event)">
+            <div class="form-group was-validated">
+                <label class="form-label" for="email">Name</label>
+                <input class="form-control" type="name" id="name" name="name" required autocomplete="">
+               
+            </div>
+
+            <div class="form-group was-validated">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" required autocomplete="">
+                
+            </div>
+
+            <div class="form-group was-validated">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" id="password" required>
+                
+            </div>
+
+            <input class="btn btn-success w-100" type="submit" value="login" >
+        </form>
+    </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="bootstrap/js/jquery-3.6.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

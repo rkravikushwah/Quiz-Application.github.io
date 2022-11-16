@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #008080;
+}
+.container
+{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    height: min-content;
+    width: 400px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    border-radius: 15px;
+    background-color: white;
+    user-select: none;
+    
+}
+.name
+{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: capitalize;
+    border-bottom: 1px solid gray;
+}
+
+.username,
+.userpoints,
+.usertime {
+  color: black;
+  text-align: center;
+  margin: 10px; 
+}
+.rightans,.wrongans{ text-align: center;
+  margin: 10px; }
+
+.end-page .name
+{
+  font-size: 40px;
+  font-weight: 400;
+  color: crimson;
+ text-shadow: 1px 2px 3px;
+}
+.end-page p
+{
+  font-size: 30px;
+}
+p span{
+  color: rgb(12, 132, 180);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <link rel="stylesheet" href="css/info.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="info"><h1>Welcome</h1><span id="name"></span></div>
+        <div class="info"><span><img src="check.png" alt=""></span>you have successfully logged in</div>
+        <div class="info"><h3>Some information about Test :</h3> <span></span></div>
+        <div class="info">1. You will have only 10 seconds for each question.</div>
+        <div class="info">2. Once you select your answer, it can't be deselect.</div>
+        <div class="info">3. You can't exit from the Quiz while you're playing.</div>
+        <div class="info">4. You'll get points on the basis of your correct answers.</div>
+        <div class="btn"><a href="test.html">Continue</a></div>
+
+    </div>
+    <script>
+       document.querySelector("#name").innerHTML=sessionStorage.getItem("name");
+    </script>
+</body>
+</html>

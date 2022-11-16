@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="end-page">
+            <h3 class="username"><span class="name"></span></h3>
+            <p class="userpoints">Your Points :<span class="points"></span></p>
+            <p class="rightans">Right Answers :<span class="right"></span></p>
+            <p class="wrongans">Wrong Answers :<span class="wrong"></span></p>
+            <p class="usertime"> Total Time :<span class="time_taken"></span> </p>
+         </div>
+    </div>
+
+    <script>
+        document.querySelector(".points").innerHTML=sessionStorage.getItem("points");
+        document.querySelector(".name").innerHTML=sessionStorage.getItem("name");
+        document.querySelector(".usertime span").innerHTML=sessionStorage.getItem("mytime");
+        document.querySelector(".right").innerHTML=sessionStorage.getItem("rightans");
+        document.querySelector(".wrong").innerHTML=sessionStorage.getItem("wrongans");
+        
+    </script>
+    <script src="js/timer.js"></script>
+</body>
+</html>

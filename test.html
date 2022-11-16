@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <video id="video" autoplay= "true"></video>
+    <div class="snap"></div>
+    <div class="container">
+        <div class="header">
+            <div class="name">
+                <h3>Rohit Ranjan</h3>
+            </div>
+            <div class="points">
+                <h3>Points:<span id="po">0</span></h3>
+            </div>
+            <div class="time">
+                <h3>00 : 00</h3>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="question" id="question">
+                <h3></h3>
+            </div>
+            <div class="options" id="options">
+                <ul>
+                    <li class="opt"></li>
+                    <li class="opt"></li>
+                    <li class="opt"></li>
+                    <li class="opt"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <button class="btn-next" onclick="next()" >Next Question</button>
+            <div class="indicator">
+                <div class="right" id="right"><img src="right.png" alt=""></div>
+                <div class="wrong" id="wrong"><img src="wrong.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script>
+         document.querySelector(".name h3").innerHTML=sessionStorage.getItem("name");
+         
+         // Camera
+         let video=document.getElementById("video");
+        if(navigator.mediaDevices.getUserMedia)
+        {
+            navigator.mediaDevices.getUserMedia({video:true})
+            .then(function(s){
+               video.srcObject=s;
+
+            });
+        }
+        else
+        {
+            console.log("no");
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+</html>
